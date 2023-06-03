@@ -9,7 +9,7 @@ Coral #F78154
 */
 body {
   line-height: 1.7;
-  color: gray;
+  color: #3F4739;
   font-weight: 300;
   font-size: 1.1rem; }
 
@@ -32,11 +32,11 @@ a {
 h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
-h1{
+/* h1{
   font-family: 'Modern No. 20', sans-serif;
   font-size: 2.5em;
 
-}
+} */
 
 .border-2 {
   border-width: 2px; }
@@ -129,13 +129,14 @@ h1{
   height: 43px;
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
   .form-control:active, .form-control:focus {
-    border-color: #007bff; }
+    border-color: #BACBA9; }
   .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
 
 .site-section {
   padding: 2.5em 0; }
+
   @media (min-width: 768px) {
     .site-section {
       padding: 5em 0; } }
@@ -321,12 +322,24 @@ h1{
   .site-navbar .container-fluid {
     padding-left: 7rem;
     padding-right: 7rem; }
+    @media(max-width: 500px){
+      .site-navbar .container-fluid {
+        padding-left: 4rem;
+        padding-right: 4rem; }
+    }
+    @media(max-width: 300px){
+      .site-navbar .container-fluid {
+        padding-left: 2rem;
+        padding-right: 2rem; }
+
+    }
+    
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid #f3f3f4 !important; }
   .site-navbar .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active {
-      color: #007bff;
+      color: #BACBA9 !important;
       display: inline-block;
       padding: 5px 20px; }
     .site-navbar .site-navigation .site-menu a {
@@ -345,9 +358,11 @@ h1{
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
         position: relative;
+        width: 400px;
         padding-right: 20px; }
         .site-navbar .site-navigation .site-menu .has-children > a:before {
           position: absolute;
+          
           content: "\e313";
           font-size: 16px;
           top: 50%;
@@ -503,12 +518,12 @@ h1{
       position: relative;
       color: #212529; }
       .site-mobile-menu .site-nav-wrap a:hover {
-        color: #007bff; }
+        color: #BACBA9 !important; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li .active {
-        color: #007bff; }
+        color: #BACBA9 !important; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -635,9 +650,16 @@ h1{
       .intro-section:before {
         width: 100%; } }
   .intro-section h1 {
-    font-size: 3rem;
-    letter-spacing: .2em;
+    font-size: 4rem;
+    font-weight:600;
+   
     color: #fff; }
+    @media(max-width: 400px){
+      .intro-section h1{
+        font-size: 2.5rem !important;
+        letter-spacing: .1em;
+      }
+    }
   .intro-section p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.1rem;
@@ -679,6 +701,7 @@ h1{
   .cta a.active > span {
     background-color: #BACBA9;
     color: #3F4739; 
+    border-color: #BACBA9 !important;
     
   }
 
@@ -699,7 +722,7 @@ h1{
   max-width: 450px; }
   @media (max-width: 991.98px) {
     .section-title {
-      font-size: 1.5rem; } }
+      font-size: 3rem; } } */
 
 .counter .icon-wrap {
   margin-right: 1.5rem; }
@@ -743,8 +766,8 @@ h1{
       .image-absolute-box .box .icon-wrap span {
         font-size: 2rem; }
     .image-absolute-box .box h3 {
-      font-size: 2.5rem;
-     font-family: 'Modern No. 20', Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 2rem;
+     /* font-family: 'Modern No. 20', Verdana, Geneva, Tahoma, sans-serif; */
       color: #fff;
       margin-bottom: 1.5rem; }
     .image-absolute-box .box p {
@@ -848,10 +871,14 @@ h1{
       background-color: #007bff; }
 
 .footer-section {
-  padding: 7em 0;
+   margin: 2em 0; 
   background-color: #fafafa; }
   .footer-section p {
-    font-size: 1rem; }
+    font-size: 1rem;
+    padding:2em 0;
+  
+  
+  }
   .footer-section h3 {
     font-size: .9rem;
     letter-spacing: .1rem;
