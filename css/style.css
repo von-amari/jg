@@ -13,6 +13,7 @@ body {
   font-weight: 300;
   font-size: 1.1rem; }
 
+
 ::-moz-selection {
   background: #000;
   color: #fff; }
@@ -33,6 +34,7 @@ h2, h3, h4, h5,
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 h1{
   font-family: 'Modern No. 20', sans-serif;
+  font-size: 2.5em;
 
 }
 
@@ -669,7 +671,7 @@ h1{
 .cta a:hover span {
   background: #BACBA9;
   color: #3F4739;
-  border: none;
+  border-color: #BACBA9 !important;
 }
 
 .cta a.active {
@@ -689,10 +691,11 @@ h1{
   margin-bottom: 1.5rem; }
 
 .section-title {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #000;
   margin-bottom: 1.8rem;
-  font-weight: 900;
+  font-family: 'brittany_signatureregular', sans-serif;
+  /* font-weight:600; */
   max-width: 450px; }
   @media (max-width: 991.98px) {
     .section-title {
@@ -740,7 +743,8 @@ h1{
       .image-absolute-box .box .icon-wrap span {
         font-size: 2rem; }
     .image-absolute-box .box h3 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+     font-family: 'Modern No. 20', Verdana, Geneva, Tahoma, sans-serif;
       color: #fff;
       margin-bottom: 1.5rem; }
     .image-absolute-box .box p {
